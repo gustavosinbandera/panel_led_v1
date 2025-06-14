@@ -1,6 +1,6 @@
 
 
-const message = "   ESP32 ESPRESSIF RGB LED MATRIX DISPLAY DEMO   ";
+const message = "   ESP32 ESPRESSIF RGB LED MATRIX DISPLAY DEMO   INGENIERO GUSTAVO GRISALES";
 const cols = 64;
 const rows = 8;
 const panel = document.getElementById("panel");
