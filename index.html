@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RGB Panel with Manual Color Control</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="panel-frame">
+    <div id="panel"></div>
+  </div>
+
+  <div class="slider-container">
+    <div class="slider-group">
+      <label for="r">R</label>
+      <input type="range" id="r" min="0" max="255" value="255">
+    </div>
+    <div class="slider-group">
+      <label for="g">G</label>
+      <input type="range" id="g" min="0" max="255" value="0">
+    </div>
+    <div class="slider-group">
+      <label for="b">B</label>
+      <input type="range" id="b" min="0" max="255" value="0">
+    </div>
+  </div>
+
+  <script src="font-completo.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
