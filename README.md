@@ -1,3 +1,4 @@
+
 # panel_led_v1
 # LED Matrix Display Web Panel 💡
 
@@ -56,6 +57,32 @@ Luego abre tu navegador y visita:
 ```
 http://localhost:8000
 ```
+
+---
+
+## 🔁 ¿No ves los cambios? Evita el caché del navegador
+
+Durante el desarrollo, el navegador puede cargar versiones anteriores en caché. Aquí tienes algunas soluciones:
+
+### ✔️ Recarga forzada sin caché
+- Chrome / Firefox: `Ctrl + F5` o `Ctrl + Shift + R`  
+- Mac: `Cmd + Shift + R`
+
+### ✔️ Desactiva caché temporalmente
+1. Abre DevTools (`F12`)
+2. Ve a la pestaña **Network**
+3. Activa **Disable cache**
+
+### ✔️ Usa versiones en los scripts para evitar caché
+Agrega `?v=1` en los archivos `.js` y `.css` así:
+
+```html
+<link rel="stylesheet" href="style.css?v=1">
+<script src="font-completo.js?v=1"></script>
+<script src="main.js?v=1"></script>
+```
+
+Esto obliga al navegador a recargar el archivo como si fuera nuevo.
 
 ---
 

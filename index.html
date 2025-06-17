@@ -3,9 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <title>RGB Panel with Manual Color Control</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=2" />
+  <style>
+    #cache-warning {
+      font-size: 0.9rem;
+      background: #333;
+      color: #ccc;
+      padding: 8px 12px;
+      margin-bottom: 10px;
+      border-left: 4px solid #ff9900;
+    }
+  </style>
 </head>
 <body>
+  <div id="cache-warning">
+    If recent changes are not visible, press <strong>Shift + Cmd + R</strong> (or <strong>Ctrl + F5</strong>) to refresh without cache.
+  </div>
+
   <div id="panel-frame">
     <div id="panel"></div>
   </div>
@@ -13,19 +27,23 @@
   <div class="slider-container">
     <div class="slider-group">
       <label for="r">R</label>
-      <input type="range" id="r" min="0" max="255" value="255">
+      <input type="range" id="r" min="0" max="255">
     </div>
     <div class="slider-group">
       <label for="g">G</label>
-      <input type="range" id="g" min="0" max="255" value="0">
+      <input type="range" id="g" min="0" max="255">
     </div>
     <div class="slider-group">
       <label for="b">B</label>
-      <input type="range" id="b" min="0" max="255" value="0">
+      <input type="range" id="b" min="0" max="255">
+    </div>
+    <div class="slider-group">
+      <label for="speed">Speed</label>
+      <input type="range" id="speed" min="50" max="200">
     </div>
   </div>
 
-  <script src="font-completo.js"></script>
-  <script src="main.js"></script>
+  <script src="font-completo.js?v=2"></script>
+  <script src="main.js?v=2"></script>
 </body>
 </html>
